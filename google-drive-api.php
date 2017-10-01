@@ -25,7 +25,7 @@ class GoogleDriveAPI {
 	public function init() {
 		$this->redirect = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 		$this->client = new GoogleClient();
-		$this->client->setAuthConfig($this->secret);
+		$this->client->setAuthConfig(__DIR__.'/'.$this->secret);
 		$this->client->addScope($this->scope);
 		$this->service = new GoogleDrive($this->client);
 	}
