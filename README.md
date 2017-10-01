@@ -17,14 +17,15 @@ Yes, it is works... but I do not find the solutions are comfortable. Sorry all f
  4. Create a folder in your Google Drive and give access the service account \*\*\*\*@\*\*\*\*.iam.gserviceaccount.com (genereated in your previously step).
 
 **You must know:**<br>
-In Google Drive your folders and files saved under ID, it is mean you can keep many files and folder with equals names.<br>
+In Google Drive your folders and files saved under ID,<br>
+it is mean you can keep many files and folder with equals names.<br>
 I.e. you can make 'test.txt' even already exist,<br>
 ...and than you make another 'test.txt',<br>
 ......and again to infinity,<br>
 .........and live with are until delete.
 
 **How it use:**
-
+```php
     include_once 'google-drive-api.php'; // Include the script
     $drive = new GoogleDriveAPI();
     $drive->init();
@@ -37,8 +38,9 @@ I.e. you can make 'test.txt' even already exist,<br>
     
     $drive->uploadFile('FileName.txt' [, $folderId=false [, $rewrite = true]]);
     // Upload file to (optional)$folderId and (optional)$rewrite file with equals name.
-
+```
 **In conclusion I will say:**<br>
-In skilful hands it can be more than file editor at Google Drive. It can work with [all services of Google](https://developers.google.com/products/ "all services of Google"). <br>
+In skilful hands it can be more than file editor at Google Drive.<br>
+It can work with [all services of Google](https://developers.google.com/products/ "all services of Google"). <br>
 And It can be work for Java, Phyton, ~~php~~, .Net, Ruby, Node.js, Objective-C.<br>
 So, all the best and good luck, and do not forget to work harder.<br>
