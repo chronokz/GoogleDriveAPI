@@ -34,7 +34,8 @@ I.e. you can make 'test.txt' even already exist,<br>
     $drive->getFiles('FileName.txt'); // Find Files with this name
     
     $drive->deleteFiles('FileName.txt'); // Delete All FileName.txt from drive
-    $drive->deleteFiles('FileName.txt', 'FolderID'); // Delete FileName.txt from folder
+    $drive->deleteFiles('FileName.txt', 'FolderID'); // Delete FileName.txt in folder
+    $drive->deleteFileById('FileId'); // Delete File By Id
     
     $drive->uploadFile('FileName.txt' [, $folderId=false [, $rewrite = true]]);
     // Upload file to (optional)$folderId and (optional)$rewrite file with equals name.
