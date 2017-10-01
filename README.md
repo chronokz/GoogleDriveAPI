@@ -8,12 +8,13 @@ Many people recommended use cURL and etc like a solution for OAuth2 authorize<br
 also sometimes I faced solution with only once OAuth and next work with *setAccessType('offline')*.<br>
 Yes, it is works... but I do not find the solutions are comfortable. Sorry all for my opinion ;)<br>
 
-**Before start (by the way, I think you already did first, second and third steps):**
+**Before start (by the way, I think you already did everything except the last):**
 
  1. Create project in api google console
  2. Allow your project use lib Google Drive API.
  2. Make account service key and save it (It will be your secret.json)
- 3. Create a folder in your Google Drive and give access the service account \*\*\*\*@\*\*\*\*.iam.gserviceaccount.com (genereated in your previously step).
+ 3. Install google client ``php composer.phar require google/apiclient:^2.0``
+ 4. Create a folder in your Google Drive and give access the service account \*\*\*\*@\*\*\*\*.iam.gserviceaccount.com (genereated in your previously step).
 
 **You must know:**<br>
 In Google Drive your folders and files saved under ID, it is mean you can keep many files and folder with equals names.<br>
