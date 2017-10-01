@@ -30,7 +30,8 @@ In Google Drive your folders and files saved under ID, it is mean you can keep m
     $drive->deleteFiles('FileName.txt'); // Delete All FileName.txt from drive
     $drive->deleteFiles('FileName.txt', 'FolderID'); // Delete FileName.txt from folder
     
-    $drive->uploadFile('FileName.txt' [, $folderId=false [, $rewrite = true]]); // Upload file to (optional)$folderId and (optional)$rewrite file with equals name.
+    $drive->uploadFile('FileName.txt' [, $folderId=false [, $rewrite = true]]);
+    // Upload file to (optional)$folderId and (optional)$rewrite file with equals name.
 
 **In conclusion I will say:**
 In skilful hands it can be more than file editor at Google Drive. It can work with [all services of Google](https://developers.google.com/products/ "all services of Google"). 
